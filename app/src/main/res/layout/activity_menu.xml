@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <Button
+        android:id="@+id/buttonDiscipline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Disciplines"
+        app:layout_constraintEnd_toStartOf="@+id/usernameId"
+        app:layout_constraintTop_toBottomOf="@+id/usernameId" />
+
+    <Button
+        android:id="@+id/buttonYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="35dp"
+        android:text="Years"
+        app:layout_constraintStart_toEndOf="@+id/usernameId"
+        app:layout_constraintTop_toBottomOf="@+id/usernameId" />
+
+    <Button
+        android:id="@+id/buttonCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Courses"
+        app:layout_constraintStart_toStartOf="@+id/buttonYear"
+        app:layout_constraintTop_toBottomOf="@+id/buttonYear" />
+
+    <TextView
+        android:id="@+id/usernameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonClasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="17dp"
+        android:text="Classes"
+        app:layout_constraintStart_toStartOf="@+id/buttonDiscipline"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDiscipline" />
+
+    <Button
+        android:id="@+id/buttonMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mail"
+        app:layout_constraintStart_toStartOf="@+id/buttonClasses"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClasses" />
+
+    <Button
+        android:id="@+id/buttonContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="20dp"
+        android:text="Contact"
+        app:layout_constraintStart_toStartOf="@+id/buttonCourse"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCourse" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Back to login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMail" />
+
+</android.support.constraint.ConstraintLayout>

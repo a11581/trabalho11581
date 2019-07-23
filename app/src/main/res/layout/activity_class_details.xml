@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassDetailsActivity">
+
+    <EditText
+        android:id="@+id/startingHourId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="107dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Starting Hour"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/durationId" />
+
+    <EditText
+        android:id="@+id/roomId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Room"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/durationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Duration"
+        app:layout_constraintStart_toStartOf="@+id/roomId"
+        app:layout_constraintTop_toBottomOf="@+id/roomId" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discipline"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerDisciplineId"
+        app:layout_constraintStart_toStartOf="@+id/username15Id" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="24dp"
+        android:text="Room"
+        app:layout_constraintStart_toStartOf="@+id/spinnerDisciplineId"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDisciplineId" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration (Min)"
+        app:layout_constraintBaseline_toBaselineOf="@+id/durationId"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/dateId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Date"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDatePicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="7dp"
+        android:text="Starting Hour"
+        app:layout_constraintBottom_toBottomOf="@+id/startingHourId"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="19dp"
+        android:text="Open Date Picker"
+        app:layout_constraintBottom_toTopOf="@+id/startingHourId"
+        app:layout_constraintStart_toStartOf="@+id/startingHourId" />
+
+    <Button
+        android:id="@+id/buttonUpdateClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailCheckBox" />
+
+    <Spinner
+        android:id="@+id/spinnerDisciplineId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/emailCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="10dp"
+        android:text="Notify students via email"
+        app:layout_constraintStart_toStartOf="@+id/startingHourId"
+        app:layout_constraintTop_toBottomOf="@+id/specialCheckBox" />
+
+    <CheckBox
+        android:id="@+id/specialCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="9dp"
+        android:text="Special class"
+        app:layout_constraintStart_toStartOf="@+id/emailCheckBox"
+        app:layout_constraintTop_toBottomOf="@+id/startingHourId" />
+
+    <TextView
+        android:id="@+id/username15Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

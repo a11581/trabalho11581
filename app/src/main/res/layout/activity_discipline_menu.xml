@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisciplineMenuActivity">
+
+    <Button
+        android:id="@+id/buttonCreateDiscipline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="Create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRemoveDiscipline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="Remove"
+        app:layout_constraintStart_toStartOf="@+id/buttonCreateDiscipline"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreateDiscipline" />
+
+    <Button
+        android:id="@+id/buttonUpdateDiscipline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRemoveDiscipline"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRemoveDiscipline" />
+
+    <Button
+        android:id="@+id/buttonReadDiscipline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="43dp"
+        android:text="Read"
+        app:layout_constraintStart_toStartOf="@+id/buttonUpdateDiscipline"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUpdateDiscipline" />
+
+    <TextView
+        android:id="@+id/username2Id"
+        android:layout_width="wrap_content"
+        android:layout_height="11dp"
+        android:layout_marginTop="23dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
